@@ -16,7 +16,7 @@ uptime = subprocess.getoutput("uptime -p")
 print("Uptime: " + uptime[3:])
 user = subprocess.getoutput("whoami")
 print("Logged in as: " + user)
-subprocess.call(["./system.sh"])
+subprocess.call(["/etc/update-motd.d/system.sh"])
 disks = subprocess.getoutput("df -h").split("\n")
 for x in range(0, len(disks)):
     if x == 0:

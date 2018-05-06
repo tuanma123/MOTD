@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-python3 motd.py
+python3 /etc/update-motd.d/motd.py
